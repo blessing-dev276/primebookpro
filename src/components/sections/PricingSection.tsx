@@ -5,19 +5,19 @@ import { Check } from "lucide-react";
 const plans = [
   {
     name: "Starter",
-    price: 80,
+    price: 150,
     features: ["1 Listopia Placement", "Basic Ranking Boost", "7-Day Positioning", "Email Support"],
     highlighted: false,
   },
   {
     name: "Growth",
-    price: 120,
+    price: 250,
     features: ["3 Listopia Placements", "Advanced Ranking Boost", "14-Day Positioning", "Priority Support", "Performance Report"],
     highlighted: true,
   },
   {
     name: "Domination",
-    price: 150,
+    price: 500,
     features: ["5 Listopia Placements", "Maximum Ranking Boost", "30-Day Positioning", "Dedicated Manager", "Full Analytics Suite", "Re-boost Guarantee"],
     highlighted: false,
   },
