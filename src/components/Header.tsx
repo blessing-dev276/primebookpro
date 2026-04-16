@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { label: "Services", href: "#services" },
@@ -39,10 +40,8 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo / Wordmark */}
-        <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="no-underline">
-          <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-primary font-light neon-text cursor-pointer">
-            PrimebookPro
-          </span>
+        <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="no-underline flex items-center gap-2">
+          <img src={logo} alt="PrimebookPro" className="h-6 md:h-8 w-auto dark:invert dark:brightness-200 dark:hue-rotate-180" loading="lazy" width={800} height={512} />
         </a>
 
         {/* Desktop Nav */}
