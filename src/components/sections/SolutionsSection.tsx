@@ -63,7 +63,7 @@ const SolutionsSection = () => {
   const { ref, inView } = useInView(0.2);
 
   return (
-    <section ref={ref} className="py-32 px-6">
+    <section ref={ref} id="services" className="py-32 px-6">
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
